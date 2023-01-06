@@ -24,22 +24,55 @@
       <section role="region" aria-labelledby="student-info">
         <h2 id="student-info">Student Info</h2>
         <div class="info">
-          <label for=""></label>
-          <input type="text"></input>
+          <label for="student-name">Name</label>
+          <input type="text" id="student-name" name="student-name" placeholder=""/>
+           <!--Even though you added a placeholder to the first input element in the previous lesson,
+            this is actually not a best-practice for accessibility; too often, users confuse 
+            the placeholder text with an actual input value - they think there is already a value 
+            in the input.-->
         </div>
         <div class="info">
-          <label for=""></label>
-          <input type="text"></input>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email"/>
         </div>
         <div class="info">
-          <label for=""></label>
-          <input type="text"></input>
+          <label for="birth-date">D.O.B.<span class="sr-only">Date of Birth</span></label>
+          <input type="date" id="birth-date" name="birth-date"/>
         </div>
         
         
       </section>
       <section role="region" aria-labelledby="html-questions">
         <h2 id="html-questions">HTML</h2>
+        <div class="question-block"> 
+          <p>1</p>
+        <fieldset class="question" name="question1">
+          <legend>Question #1</legend>
+          <ul class="answers-list">
+            <li> <label>
+              <input type="radio" />
+            </label>True</li>
+            <li> <label>
+              <input type="radio" />
+            </label>False</li>
+          </ul>
+        </fieldset>
+      </div>
+      <div class="question-block"> 
+        <p>2</p>
+      <fieldset class="question" name="question2">
+        <legend>Question #1</legend>
+          <ul class="answers-list">
+            <li> <label>
+              <input type="radio" />
+            </label>True</li>
+            <li> <label>
+              <input type="radio" />
+            </label>False</li>
+          </ul>
+      </fieldset>
+    </div>
+       
       </section>
       <section role="region" aria-labelledby="css-questions">
         <h2 id="css-questions">SCC</h2>
